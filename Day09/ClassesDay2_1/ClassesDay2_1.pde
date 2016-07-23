@@ -30,7 +30,7 @@ void draw() {
 class Ship {
   // fields
   color col;
-  int x;
+  int x; 
   int y;
   int speed;
  
@@ -39,6 +39,7 @@ class Ship {
     // assign random values to all fields
     col = color(random(256), random(256), random(256), random(256));
     speed = int(random(1, 10));
+    
     
     x = int(random(width));
     y = int(random(height));
@@ -63,11 +64,10 @@ class Ship {
     // check boundary conditions and reset values
     if (x>width && speed>0) {
       x = -20;
+      x+= speed;
     }
     
-    if (x<0 && speed < 0) {
-      x = width+20;
-    }
+    
   }
   
 }
