@@ -1,7 +1,7 @@
 //inspiration taken from Daniel Shiffman's nature of code
 //chapter 1
 
-//vector notation in processing 
+
 PVector position; 
 PVector velocity; 
 
@@ -11,7 +11,6 @@ int radius;
 void setup(){
   size(500, 500);
   background(0); 
-  
   position = new PVector( width/2, height/2); 
   velocity = new PVector(5, 6); 
   
@@ -25,10 +24,8 @@ void draw(){
   fill(0, 10); 
   rect(0, 0, width, height); 
   //background(0); 
-   //instead of individually adding x speed and y speed to
-   //x and y position, can just use vector notation
-   position.add(velocity); 
   
+   position.add(velocity); 
   
   if( position.x >= (width- radius/2) || position.x <= radius/2){
     velocity.x = velocity.x *-1; 
@@ -37,7 +34,6 @@ void draw(){
     velocity.y = velocity.y *-1 ; 
   }
   
-  //changes color if hits boundaries of screen 
   if( position.x== (width- radius/2) || position.x== radius/2 ){
     r = random(0,255); 
     g = random(0, 255); 
