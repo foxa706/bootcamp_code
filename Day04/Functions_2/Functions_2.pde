@@ -19,7 +19,7 @@ void draw() {
   rect(0,0, width, height);
   
   //1.Simple function that draws a circle at the mouse position 
-  drawCircle(mouseX, mouseY, mouseX/4);
+  //drawCircle(mouseX, mouseY, mouseX/4);
   
   //comment out #1
   //2. Creating a pattern of circles 
