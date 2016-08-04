@@ -62,15 +62,6 @@ void draw(){
      velocity.add(gravity); 
      
      //uncomment the following to add bouncing 
-//     if(pos.y > height -size/2){
-//       pos.y = height - size/2; 
-//       
-//       //slowing down the velocity each time loops 
-//
-//       velocity.y = velocity.y* -0.8; 
-//       if(abs(velocity.y) < 1){
-//         velocity.y = 0; 
-//       }
-//     }
+
   }
 }

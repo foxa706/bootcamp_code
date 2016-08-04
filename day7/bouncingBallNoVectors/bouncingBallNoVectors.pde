@@ -11,7 +11,6 @@ int radius;
 void setup(){
   size(500, 500);
   background(0); 
-  
   xSpeed = 5; 
   ySpeed = 6; 
   
@@ -27,7 +26,6 @@ void draw(){
   rect(0, 0, width, height); 
   //background(0); 
   
-  //add xSpeed to x and y position
   x = x + xSpeed;
   y = y + ySpeed; 
   
@@ -39,7 +37,6 @@ void draw(){
     ySpeed = ySpeed * -1; 
   }
   
-  //changes color if hits boundaries of screen 
   if( x== (width- radius/2) || x== radius/2 ){
     r = random(0,255); 
     g = random(0, 255); 

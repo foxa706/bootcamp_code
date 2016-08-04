@@ -15,7 +15,7 @@ void draw() {
   
   //orbit
   float x = r*cos(theta); 
-  float y = r*sin(theta); 
+  float y = 2*r*sin(theta); 
   
   //circle
   fill(0, 255, 255);
