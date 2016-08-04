@@ -15,12 +15,13 @@ void draw() {
   
   //orbit
   float x = r*cos(theta); 
-  float y = 2*r*sin(theta); 
+  float y = r*sin(theta); 
   
   //circle
   fill(0, 255, 255);
   noStroke();
   ellipse(x+width/2, y+height/2, 20, 20);
   
-  theta +=.01; 
+  //can increase rate of change of theta to make orbit faster
+  theta +=.1; 
 }
